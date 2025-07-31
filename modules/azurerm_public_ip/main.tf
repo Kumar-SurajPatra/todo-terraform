@@ -1,3 +1,6 @@
+#Public IPs allow Azure resources—such as 
+#virtual machines, load balancers, or NAT gateways—to be accessible from the internet
+
 resource "azurerm_public_ip" "pip" {
   name                    = var.public_ip_name
   location                = var.public_ip_location
@@ -9,3 +12,4 @@ resource "azurerm_public_ip" "pip" {
     environment = "test"
   }
 }
+
